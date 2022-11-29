@@ -1,0 +1,182 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+
+    color: #5A5A5A;
+    font-size: 1rem;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 300;
+
+    text-align: center;
+}
+
+strong {
+    font-weight: 700;
+}
+
+
+/* ============
+   Typography
+=============== */
+
+.hero-title {
+    color: #fff;
+    font-size: 2.5rem;
+    font-weight: 300;
+    line-height: 1;
+    margin: 0;
+}
+
+.hero-subtitle,
+.hero-text,
+.intro-subtitle {
+    color: #F18119;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.hero-subtitle {
+    font-size: 1.3rem;
+    margin-top: 0;
+}
+
+.hero-text {
+    font-size: 0.625rem;
+    letter-spacing: 2px;
+    margin: 0;
+    border-top: 7px solid;
+    border-image: linear-gradient(to right, #FF713B, #FFA51D) 1;
+    order: -1;
+    padding-top: 5px;
+}
+
+
+.intro-title {
+    color: #404040;
+    font-size: 1.3125rem;
+    margin-bottom: 0;
+}
+
+.intro-subtitle {
+    margin-top: 0;
+    margin-bottom: 2em;
+}
+
+.intro-body {
+    font-size: 1.125rem;
+}
+
+
+.register-fineprint {
+    font-size: 0.625rem;
+}
+
+
+/* ============
+   Layout
+=============== */
+
+.commercial {
+    display: flex;
+    flex-direction: column;
+}
+
+.hero {
+    background: url(images/dark-ribs.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.hero-container {
+    min-height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container {
+    padding: 0 2em;
+    max-width: 550px;
+    margin: 0 auto;
+}
+
+
+@media (min-width: 700px) {
+    .commercial {
+        flex-direction: row;
+    }
+
+    .hero,
+    .intro {
+        width: 50%;
+        min-height: 100vh;
+    }
+
+    .hero-container {
+        height: 100%;
+        justify-content: center;
+    }
+
+    .intro {
+        display: flex;
+        align-items: center;
+    }
+
+    .hero-text {
+        position: absolute;
+        top: 0;
+    }
+
+    .hero-title {
+        font-size: 3.5rem;
+    }
+    .hero-subtitle {
+        font-size: 2rem;
+    }
+}
+
+
+
+
+/* ============
+   Register
+=============== */
+
+.register {
+    max-width: 400px;
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: column;
+}
+
+
+input,
+button {
+    border: 1px solid #5A5A5A;
+    border-radius: 5px;
+    padding: 13px 0;
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+.button {
+    border: 0;
+    background: 0;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 10px;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+.button-prime {
+    background: linear-gradient(to left, #FF713B, #FFA51D);
+}
